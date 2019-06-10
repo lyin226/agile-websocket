@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.agile.websocket.business.mapper.GroupChatMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.agile.websocket.business.entity.GroupChat">
+        <id column="id" property="id" />
+        <result column="group_name" property="groupName" />
+        <result column="group_user_id" property="groupUserId" />
+        <result column="other_id" property="otherId" />
+        <result column="is_delete_user" property="isDeleteUser" />
+        <result column="is_delete_other" property="isDeleteOther" />
+        <result column="create_time" property="createTime" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        id, group_name, group_user_id, other_id, is_delete_user, is_delete_other, create_time
+    </sql>
+
+</mapper>
